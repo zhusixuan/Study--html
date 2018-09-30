@@ -1,0 +1,125 @@
+1.form表单
+  <form action="">
+    嵌套表单控件
+  </form>
+  属性
+  action 提交给某个页面去处理表单数据  login.action login.php
+  method 提交方式 
+    get 
+      ?key=value  查询字符串
+      不安全，用户可见
+      大小限制 1024字节
+    post
+      安全
+      大小不限制
+  name表单名称
+  enctype
+    application/x-www...默认使用，对特殊字符进行编码
+    multipart/form-data   传输文件
+    text/plain    空格变+
+2.form表单控件
+  <form action="">
+    <input type="">
+  </form>
+  input   第一个form表单控件
+    type
+      text 单行文本
+      password
+      file
+      radio
+      checkbox
+      hidden
+
+      image   图片按钮
+      button
+      reset
+      submit
+    name
+      radio,chekbox他们的name值是一样的，其他不能一样
+    value
+      radio,chekbox必须写value值，否则在提交的时候会默认为on
+      按钮:显示的是其内容
+      其他：作为默认值，可以被提交
+    disabled
+      被禁用，内容不会被提交
+    readonly
+      只读
+    checked
+      默认选中，只有type类型为checkbox和radio才会有
+    ....
+  select
+    属性
+    name  代表下拉菜单提交时候的key值
+    size  代表长度
+    multiple  
+    子级
+      <option value="">必须写一个值，否则Wie空</option>
+        value   必写，作为提交表单时候的值
+        selected  默认被选中
+        disabled
+  label
+    for  指向要选中的那个控件的id值
+  button
+    按钮   提交功能
+    type  
+      submit   有提交功能
+      button 普通按钮
+      reset  重置
+  textarea
+    cols
+    rows
+    readonly
+    wrap
+      off
+      soft
+3.H5新增控件
+  progress  表示进度
+  output   表示输出，表示用户动作产生的结果
+  meter
+    min
+    low
+    high
+    max
+    value
+    optimum
+    当optimum和value值在一个区间，安全绿色
+    当optimum和value隔一个区间，黄色
+    当optimum和value隔两个区间，红色
+  datalist
+    datalist与select控件的区别
+      1.select有默认选中功能，datalist没有
+      2.datalist有默认搜索的功能，select没有
+      3.datalist有记忆功能，可以记忆几次最近输入的内容，select没有
+      4.选中之后，datalist的输入框中显示的是value值，select显示的是option中的值
+4.主流浏览器
+  火狐
+  谷歌
+  欧朋
+  IE(IETester)
+  safri
+5.input控件类型新增
+    type
+      date
+      time
+      datetime-local
+      month
+      week
+	  url
+	  email
+	  color
+	  range
+	  search
+	  tel
+
+	 新增属性
+		autofocus
+		placeholder
+		pattern
+		list
+		min'max
+		required
+	form新增属性
+		form
+  
+
+

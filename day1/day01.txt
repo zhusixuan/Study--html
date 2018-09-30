@@ -1,0 +1,85 @@
+1.PS   绘图，切片和测量
+2.AXURE		绘制原型
+	元件库
+		元件
+		动态面板
+	添加用例
+3.html
+	超文本标记语言
+	hyperText maker language
+	历史
+	html1-3美国军方用于军队内容
+	
+	html4.0.1
+		使用dtd规则
+		<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+		<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+	html5
+		<!DOCTYPE html>
+4.标记语言
+	语义化标签
+	<p> 内容区 </p>
+5.文档结构
+	1.文档声明
+	2.html标签 lang="en"
+		<html  属性名="属性值"></html>
+		<head>
+			<meta>  单元素
+			<title></title>  
+		</head>
+		<body>
+			用来呈现在浏览器中
+		</body>
+6.块级元素和行内元素
+	块级元素：可以独占一行，
+		块级元素里面可以嵌套块级元素和行内元素
+		div   没有任何语义
+		p  语言是段落
+
+	行内元素：可以和其他元素共享一行
+		行内元素里面只可以嵌套行内元素
+		span  没有任何语义
+		strong  强调并加粗
+		em   强调和斜体
+		u    下划线
+		s    加删除线
+		b    加粗
+		sup  上标
+		sub  下标
+		img  
+			src alt width height
+			路径
+				相对路径：
+					./  表示当前目录下
+					../上一级目录
+					../../
+				绝对路径
+					H:/3.HTML/day01/images/1.jpg
+	空元素
+		img
+	替代元素
+		img
+7.超链接
+	<a href=""></a>
+	1.url
+	2.某一个元素（锚点）
+	3.发邮件
+8.表格
+	<table></table>
+	<caption></caption>   表格标题
+
+	
+
+
+
+
+
+
+
+
+
+
+
+

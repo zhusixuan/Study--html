@@ -1,0 +1,118 @@
+1.
+  块级元素
+    div
+    p
+    h1-h6
+    ul li 
+    ol li
+    table
+      thead
+      tbody
+      tfoot
+  行内元素
+    span
+    sup
+    sub
+    strong
+    em
+    b
+    i
+    u
+    s
+    a
+      url
+      锚点
+      发邮件
+  空元素
+    img
+    col
+  代替元素
+    img
+    video
+    audio...
+2.html语法
+  开始标签  结束标签  内容区域
+  空格
+  <!-- 注释   -->
+  实体
+    &nbsp;&gt; &lt; &copy; 
+3.表单元素  收集用户信息
+  form
+    method  表示用哪种方式提交
+      get 
+        1.默认表单提交方式为get
+        2.不安全，明文提交
+          ?name=username&psw=123#
+        3.限制大小，一般为1024个字节
+      post
+        1.安全，非明文
+        2.不限制数据的大小
+    action
+      具体将数据提交到哪个页面去处理
+    enctype
+      application/x-www-form-urlencoded
+        默认
+      multipart/form-data
+        传文件的时候必须用
+      text/plain
+  input
+    type
+      text 单行文本
+      password  密码
+      radio    单选框
+      checkbox  多选框
+      submit  提交
+      image   图片提交按钮
+      reset   重置按钮
+      file    传输文件
+      button      如果放在form,可以提交，否则是普通按钮
+      hidden
+        在页面中隐藏，但是他的值默认被提交，必须有name,value
+    name(表单数据必须的属性，否则无法提交)
+      提交过程中的key值
+    value
+      1.type是radio,checkbox的时候，value必须写，否则form表单提交on
+      2.type是其他不是按钮类型的时候，value作为控件的默认值出现
+      3.type为按钮的时候，value代表按钮上显示的字
+  select->option
+    select
+      name 
+      multiple  是否可以进行多选，布尔属性
+        multiple="multiple"
+        multiple="true"
+        multiple
+      disabled   布尔属性
+      size  代表select的长度
+    option
+      value  代表值
+      selected  设置默认被选中
+      disabled  不可选
+    optgroup
+      label  代表选项组的名称
+  button
+    可以提交表单的控件
+      <input type="submit">
+      <button type="submit"></button>
+    普通的按钮
+      <input type="button">   
+      <button type="button" name="按钮">
+  label  标识当前控件
+    for   指向要标记的元件的id
+    <input type="radio" name="gender"   value="male" id="male">
+      <label for="male">男</label>
+  textarea
+    cols
+    rows
+    readonly
+    wrap
+      soft
+布尔类型的属性
+    disabled
+    checked   radio,checkbox
+    selected,multiple   select/option
+    readonly
+    
+
+	
+
+
